@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F54A3B082C512CF000BFAAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B072C512CF000BFAAF5 /* AppDelegate.swift */; };
 		F54A3B0A2C512CF000BFAAF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B092C512CF000BFAAF5 /* SceneDelegate.swift */; };
-		F54A3B0C2C512CF000BFAAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B0B2C512CF000BFAAF5 /* ViewController.swift */; };
-		F54A3B0F2C512CF000BFAAF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F54A3B0E2C512CF000BFAAF5 /* Base */; };
 		F54A3B112C512CF200BFAAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54A3B102C512CF200BFAAF5 /* Assets.xcassets */; };
 		F54A3B142C512CF200BFAAF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F54A3B132C512CF200BFAAF5 /* Base */; };
+		F54A3B1E2C512F6500BFAAF5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B1D2C512F6500BFAAF5 /* TabBarController.swift */; };
+		F54A3B212C512FE300BFAAF5 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B202C512FE300BFAAF5 /* UIColor+Ext.swift */; };
+		F54A3B242C5130B100BFAAF5 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B232C5130B100BFAAF5 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F54A3B042C512CF000BFAAF5 /* EgzersizRehberim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgzersizRehberim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A3B072C512CF000BFAAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54A3B092C512CF000BFAAF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F54A3B0B2C512CF000BFAAF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F54A3B0E2C512CF000BFAAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F54A3B102C512CF200BFAAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54A3B132C512CF200BFAAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54A3B152C512CF200BFAAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54A3B1D2C512F6500BFAAF5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F54A3B202C512FE300BFAAF5 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		F54A3B232C5130B100BFAAF5 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		F54A3B062C512CF000BFAAF5 /* EgzersizRehberim */ = {
 			isa = PBXGroup;
 			children = (
+				F54A3B1F2C512FD500BFAAF5 /* Helpers */,
+				F54A3B1B2C512DCF00BFAAF5 /* Application */,
+				F54A3B1C2C512DEF00BFAAF5 /* SupportingFiles */,
+				F54A3B1D2C512F6500BFAAF5 /* TabBarController.swift */,
+			);
+			path = EgzersizRehberim;
+			sourceTree = "<group>";
+		};
+		F54A3B1B2C512DCF00BFAAF5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				F54A3B072C512CF000BFAAF5 /* AppDelegate.swift */,
 				F54A3B092C512CF000BFAAF5 /* SceneDelegate.swift */,
-				F54A3B0B2C512CF000BFAAF5 /* ViewController.swift */,
-				F54A3B0D2C512CF000BFAAF5 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F54A3B1C2C512DEF00BFAAF5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				F54A3B102C512CF200BFAAF5 /* Assets.xcassets */,
 				F54A3B122C512CF200BFAAF5 /* LaunchScreen.storyboard */,
 				F54A3B152C512CF200BFAAF5 /* Info.plist */,
 			);
-			path = EgzersizRehberim;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F54A3B1F2C512FD500BFAAF5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F54A3B222C512FF200BFAAF5 /* Extensions */,
+				F54A3B232C5130B100BFAAF5 /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F54A3B222C512FF200BFAAF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F54A3B202C512FE300BFAAF5 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +162,6 @@
 			files = (
 				F54A3B112C512CF200BFAAF5 /* Assets.xcassets in Resources */,
 				F54A3B142C512CF200BFAAF5 /* Base in Resources */,
-				F54A3B0F2C512CF000BFAAF5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54A3B0C2C512CF000BFAAF5 /* ViewController.swift in Sources */,
+				F54A3B1E2C512F6500BFAAF5 /* TabBarController.swift in Sources */,
+				F54A3B212C512FE300BFAAF5 /* UIColor+Ext.swift in Sources */,
 				F54A3B082C512CF000BFAAF5 /* AppDelegate.swift in Sources */,
+				F54A3B242C5130B100BFAAF5 /* Resources.swift in Sources */,
 				F54A3B0A2C512CF000BFAAF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F54A3B0D2C512CF000BFAAF5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F54A3B0E2C512CF000BFAAF5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F54A3B122C512CF200BFAAF5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +322,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T89868475G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EgzersizRehberim/Info.plist;
+				INFOPLIST_FILE = EgzersizRehberim/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Egzersiz Rehberim";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +335,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullaharslan.EgzersizRehberim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,12 +354,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T89868475G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EgzersizRehberim/Info.plist;
+				INFOPLIST_FILE = EgzersizRehberim/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Egzersiz Rehberim";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +367,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullaharslan.EgzersizRehberim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
