@@ -10,9 +10,11 @@ import UIKit
 enum Resources {
         
     enum Colors{
-        static let active = UIColor(hex: "#437BFE")
-        static let inactive = UIColor(hex: "#929DA5")
-        static let seperator = UIColor(hex: "#E8CEF")
+        static let active     = UIColor(hex: "#437BFE")
+        static let inactive   = UIColor(hex: "#929DA5")
+        static let seperator  = UIColor(hex: "#E8ECEF")
+        static let titleGray  = UIColor(hex: "#545C77")
+        static let background = UIColor(hex: "#F8F9F9")
     }
     
     enum Strings {
@@ -22,6 +24,20 @@ enum Resources {
             static let progress = "Progress"
             static let settigns = "Settings"
         }
+        
+        enum NavBarTitles {
+            static let session  = "High Intensity Cardio"
+            static let progress = "Workout Progress"
+        }
+        
+        enum NavBarButtonTitles {
+            static let pause  = "Pause"
+            static let finish = "Finish"
+            static let export = "Export"
+            static let details = "Details"
+        }
+        
+        
     }
     
     
@@ -31,6 +47,12 @@ enum Resources {
             static let session  = UIImage(systemName: "alarm")
             static let progress = UIImage(systemName: "chart.bar")
             static let settigns = UIImage(systemName: "gear")
+        }
+    }
+    
+    enum  Fonts {
+        static func helvelticaRegular(with size: CGFloat) -> UIFont {
+            return UIFont(name: "Helvetica", size: size) ?? UIFont()
         }
     }
 

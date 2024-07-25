@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54954862C526AC50082EE64 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54954852C526AC50082EE64 /* NavBarController.swift */; };
+		F549548A2C526D330082EE64 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54954892C526D330082EE64 /* BaseController.swift */; };
+		F549548C2C526E580082EE64 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549548B2C526E580082EE64 /* OverviewController.swift */; };
+		F549548E2C526FA80082EE64 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549548D2C526FA80082EE64 /* UIView+Ext.swift */; };
+		F54954972C5274A70082EE64 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54954962C5274A70082EE64 /* SessionViewController.swift */; };
+		F54954992C5274B40082EE64 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54954982C5274B40082EE64 /* ProgressViewController.swift */; };
+		F549549B2C5274BE0082EE64 /* SettignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549549A2C5274BE0082EE64 /* SettignsViewController.swift */; };
 		F54A3B082C512CF000BFAAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B072C512CF000BFAAF5 /* AppDelegate.swift */; };
 		F54A3B0A2C512CF000BFAAF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A3B092C512CF000BFAAF5 /* SceneDelegate.swift */; };
 		F54A3B112C512CF200BFAAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54A3B102C512CF200BFAAF5 /* Assets.xcassets */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F54954852C526AC50082EE64 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		F54954892C526D330082EE64 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F549548B2C526E580082EE64 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		F549548D2C526FA80082EE64 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		F54954962C5274A70082EE64 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		F54954982C5274B40082EE64 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		F549549A2C5274BE0082EE64 /* SettignsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettignsViewController.swift; sourceTree = "<group>"; };
 		F54A3B042C512CF000BFAAF5 /* EgzersizRehberim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgzersizRehberim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A3B072C512CF000BFAAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54A3B092C512CF000BFAAF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +53,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F54954882C526C9E0082EE64 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F54954952C52747D0082EE64 /* Settigns */,
+				F54954942C5274760082EE64 /* Progress */,
+				F54954932C5274720082EE64 /* Session */,
+				F54954922C52746C0082EE64 /* Overview */,
+				F54954912C52744D0082EE64 /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F54954912C52744D0082EE64 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F54A3B1D2C512F6500BFAAF5 /* TabBarController.swift */,
+				F54954852C526AC50082EE64 /* NavBarController.swift */,
+				F54954892C526D330082EE64 /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F54954922C52746C0082EE64 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				F549548B2C526E580082EE64 /* OverviewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		F54954932C5274720082EE64 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F54954962C5274A70082EE64 /* SessionViewController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		F54954942C5274760082EE64 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				F54954982C5274B40082EE64 /* ProgressViewController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		F54954952C52747D0082EE64 /* Settigns */ = {
+			isa = PBXGroup;
+			children = (
+				F549549A2C5274BE0082EE64 /* SettignsViewController.swift */,
+			);
+			path = Settigns;
+			sourceTree = "<group>";
+		};
 		F54A3AFB2C512CF000BFAAF5 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +129,7 @@
 				F54A3B1F2C512FD500BFAAF5 /* Helpers */,
 				F54A3B1B2C512DCF00BFAAF5 /* Application */,
 				F54A3B1C2C512DEF00BFAAF5 /* SupportingFiles */,
-				F54A3B1D2C512F6500BFAAF5 /* TabBarController.swift */,
+				F54954882C526C9E0082EE64 /* Controllers */,
 			);
 			path = EgzersizRehberim;
 			sourceTree = "<group>";
@@ -98,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F54A3B202C512FE300BFAAF5 /* UIColor+Ext.swift */,
+				F549548D2C526FA80082EE64 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,9 +242,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54A3B1E2C512F6500BFAAF5 /* TabBarController.swift in Sources */,
+				F54954862C526AC50082EE64 /* NavBarController.swift in Sources */,
+				F549548A2C526D330082EE64 /* BaseController.swift in Sources */,
+				F549549B2C5274BE0082EE64 /* SettignsViewController.swift in Sources */,
+				F54954992C5274B40082EE64 /* ProgressViewController.swift in Sources */,
+				F54954972C5274A70082EE64 /* SessionViewController.swift in Sources */,
 				F54A3B212C512FE300BFAAF5 /* UIColor+Ext.swift in Sources */,
 				F54A3B082C512CF000BFAAF5 /* AppDelegate.swift in Sources */,
+				F549548E2C526FA80082EE64 /* UIView+Ext.swift in Sources */,
 				F54A3B242C5130B100BFAAF5 /* Resources.swift in Sources */,
+				F549548C2C526E580082EE64 /* OverviewController.swift in Sources */,
 				F54A3B0A2C512CF000BFAAF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
