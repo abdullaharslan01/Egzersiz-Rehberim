@@ -32,31 +32,31 @@ extension WeekView {
 }
 
 extension WeekView.WeekdayView {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         addSubViews(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel)
     }
 
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 
-    override func configureView() {
-        super.configureView()
+    override func configureAppearance() {
+        super.configureAppearance()
 
         layer.cornerRadius = 5
         layer.masksToBounds = true
 
-        nameLabel.font = Resources.Fonts.helvelticaRegular(with: 9)
+        nameLabel.font = Resources.Fonts.helveticaRegular(with: 9)
         nameLabel.textAlignment = .center
 
-        dateLabel.font = Resources.Fonts.helvelticaRegular(with: 15)
+        dateLabel.font = Resources.Fonts.helveticaRegular(with: 15)
         dateLabel.textAlignment = .center
 
         stackView.spacing = 3

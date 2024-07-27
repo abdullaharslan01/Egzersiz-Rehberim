@@ -24,6 +24,7 @@
 		F58D6A6D2C5518BA00CF1B11 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D6A6C2C5518BA00CF1B11 /* WeekView.swift */; };
 		F58D6A6F2C551AEC00CF1B11 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D6A6E2C551AEC00CF1B11 /* WeekdayView.swift */; };
 		F58D6A712C551EE800CF1B11 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D6A702C551EE800CF1B11 /* Date+Ext.swift */; };
+		F58D6A732C553F1600CF1B11 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D6A722C553F1600CF1B11 /* BaseInfoView.swift */; };
 		F5E29E462C53AE65005D84F0 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E29E452C53AE65005D84F0 /* SecondaryButton.swift */; };
 		F5E29E482C53B8AC005D84F0 /* OverViewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E29E472C53B8AC005D84F0 /* OverViewNavBar.swift */; };
 		F5E29E4A2C53B8E0005D84F0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E29E492C53B8E0005D84F0 /* BaseView.swift */; };
@@ -49,6 +50,7 @@
 		F58D6A6C2C5518BA00CF1B11 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		F58D6A6E2C551AEC00CF1B11 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		F58D6A702C551EE800CF1B11 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		F58D6A722C553F1600CF1B11 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		F5E29E452C53AE65005D84F0 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		F5E29E472C53B8AC005D84F0 /* OverViewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewNavBar.swift; sourceTree = "<group>"; };
 		F5E29E492C53B8E0005D84F0 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				F54954852C526AC50082EE64 /* NavBarController.swift */,
 				F54954892C526D330082EE64 /* BaseController.swift */,
 				F5E29E492C53B8E0005D84F0 /* BaseView.swift */,
+				F58D6A722C553F1600CF1B11 /* BaseInfoView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				F54954972C5274A70082EE64 /* SessionViewController.swift in Sources */,
 				F5E29E482C53B8AC005D84F0 /* OverViewNavBar.swift in Sources */,
 				F5E29E462C53AE65005D84F0 /* SecondaryButton.swift in Sources */,
+				F58D6A732C553F1600CF1B11 /* BaseInfoView.swift in Sources */,
 				F58D6A712C551EE800CF1B11 /* Date+Ext.swift in Sources */,
 				F54A3B212C512FE300BFAAF5 /* UIColor+Ext.swift in Sources */,
 				F54A3B082C512CF000BFAAF5 /* AppDelegate.swift in Sources */,

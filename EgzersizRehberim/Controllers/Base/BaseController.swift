@@ -15,9 +15,9 @@ enum NavBarPosition{
 class BaseController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constraintsViews()
+        configureAppearance()
     }
     
   
@@ -25,10 +25,10 @@ class BaseController: UIViewController{
 
 
 @objc extension BaseController{
-    func addViews(){}
-    func layoutViews(){}
+    func setupViews(){}
+    func constraintsViews(){}
     
-    func configure() {
+    func configureAppearance() {
         view.backgroundColor = Resources.Colors.background
     }
     
@@ -46,7 +46,7 @@ extension BaseController {
         button.setTitle(title, for: .normal)
         button.setTitleColor(Resources.Colors.active, for: .normal)
         button.setTitleColor(Resources.Colors.inactive, for: .disabled)
-        button.titleLabel?.font = Resources.Fonts.helvelticaRegular(with: 17)
+        button.titleLabel?.font = Resources.Fonts.helveticaRegular(with: 17)
         
         switch position {
         case .left:

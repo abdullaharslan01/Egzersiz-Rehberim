@@ -55,7 +55,7 @@ private extension SecondaryButton {
         makeSystem(self)
         label.textColor     = Resources.Colors.active
         label.textAlignment = .center
-        label.font          = Resources.Fonts.helvelticaRegular(with: 15)
+        label.font          = Resources.Fonts.helveticaRegular(with: 15)
         iconView.image      = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor  = Resources.Colors.active
     }
