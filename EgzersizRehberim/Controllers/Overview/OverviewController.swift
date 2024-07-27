@@ -9,7 +9,7 @@ import UIKit
 
 class OverviewController: BaseController{
     
-    private let navBar            = OverViewNavBar()
+    private let navBar    = OverViewNavBar()
     
     
 }

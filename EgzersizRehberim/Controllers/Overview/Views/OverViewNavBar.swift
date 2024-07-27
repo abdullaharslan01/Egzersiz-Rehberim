@@ -13,12 +13,7 @@ final class OverViewNavBar: BaseView{
     private let addButton         = UIButton()
     private let titleLabel        = UILabel()
     
-    private let weekView: UIView = {
-       let view = UIView()
-       
-        view.backgroundColor = .blue.withAlphaComponent(0.2)
-        return view
-    }()
+    private let weekView: UIView = WeekView()
     
     
     
@@ -74,8 +69,8 @@ extension OverViewNavBar{
         
     }
     
-    override func configure() {
-        super.configure()
+    override func configureView() {
+        super.configureView()
         
         backgroundColor = .white
         
