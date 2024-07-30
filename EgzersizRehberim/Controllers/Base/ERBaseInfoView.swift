@@ -8,7 +8,7 @@
 import UIKit
 
 
-class BaseInfoView: BaseView {
+class ERBaseInfoView: BaseView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = Resources.Fonts.helveticaRegular(with: 13)
@@ -18,6 +18,8 @@ class BaseInfoView: BaseView {
         return label
     }()
     
+    private let button: ERButton = ERButton(with: .primary)
+    
     private let contenView: UIView = {
         let view                   = UIView()
         view.backgroundColor       = .white
@@ -26,11 +28,19 @@ class BaseInfoView: BaseView {
         return view
     }()
     
-    init(with title: String? = nil, alignment: NSTextAlignment = .left){
+    init(with title: String? = nil, buttonTitle: String? = nil){
         super.init(frame: .zero)
         titleLabel.text = title?.uppercased()
-        titleLabel.textAlignment = alignment
+        titleLabel.textAlignment = buttonTitle == nil ? .center : .left
+        button.isHidden = buttonTitle == nil ? true : false
+        button.setTitle(buttonTitle)
+        
     }
+    
+    func addButtonTarget(target: Any?, action: Selector, for event: UIControl.Event ) {
+        button.addTarget(target, action: action, for: event)
+    }
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -38,11 +48,11 @@ class BaseInfoView: BaseView {
     
 }
 
-extension BaseInfoView {
+extension ERBaseInfoView {
     override func setupViews() {
         super.setupViews()
         
-        addSubViews(titleLabel,contenView)
+        addSubViews(titleLabel,contenView, button)
     }
     
     override func constraintViews() {
@@ -58,6 +68,10 @@ extension BaseInfoView {
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             
+            button.trailingAnchor.constraint(equalTo: trailingAnchor),
+            button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            button.heightAnchor.constraint(equalToConstant: 28),
+            
             contenView.topAnchor.constraint(equalTo: contentTopAnchor,constant: contentTopOffset),
             contenView.leadingAnchor.constraint(equalTo: leadingAnchor),
             contenView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -69,6 +83,9 @@ extension BaseInfoView {
     
     override func configureAppearance() {
         super.configureAppearance()
+    
+        
+        
         backgroundColor = .clear
     }
 }

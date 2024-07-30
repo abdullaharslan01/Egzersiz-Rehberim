@@ -9,8 +9,8 @@ import UIKit
 
 class SessionViewController: BaseController{
     
-    private let timerView: BaseInfoView = {
-        let view = BaseInfoView(with: "Test", alignment: .left)
+    private let timerView: ERBaseInfoView = {
+        let view = ERBaseInfoView(with: "Test", buttonTitle: "Test Button")
         return view
     }()
     

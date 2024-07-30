@@ -9,7 +9,11 @@ import UIKit
 
 final class OverViewNavBar: BaseView{
     
-    private let allWorkoutsButton = SecondaryButton()
+    private let allWorkoutsButton: ERButton = {
+        let erButton = ERButton(with: .secondary)
+        erButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
+        return erButton
+    }()
     private let addButton         = UIButton()
     private let titleLabel        = UILabel()
     
@@ -24,7 +28,7 @@ final class OverViewNavBar: BaseView{
     
     
     func addAllWorkoutsAction(_ action: Selector, with target:Any?){
-        allWorkoutsButton.addTarget(self, action: action, for: .touchUpInside)
+        allWorkoutsButton.addTarget(target, action: action, for: .touchUpInside)
     }
     
     
@@ -51,9 +55,7 @@ extension OverViewNavBar{
         
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor,constant: -15),
-            allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
-            
+            allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),            
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
@@ -77,11 +79,8 @@ extension OverViewNavBar{
         titleLabel.text      = Resources.Strings.TabBar.title(for: .overview)
         titleLabel.textColor = Resources.Colors.titleGray
         titleLabel.font      = Resources.Fonts.helveticaRegular(with: 22)
-    
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
-        
+
         addButton.setImage(Resources.Images.Common.add, for: .normal)
-        
     }
 }
 
